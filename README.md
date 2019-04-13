@@ -10,7 +10,7 @@ To use this web application you will need Python 3.5 or above. *Please follow th
 
 2) Make sure **Python version 3** is installed where you intend to execute this application from. Here is a link from where you can download Python: https://www.python.org/downloads/
 
-3) You will also need to install two Python  packages, **Flask and Requests**:
+3) You will also need to install two Python  packages, **Flask and Requests**:  
     a) First open your cli shell, then type in the command: '**pip install flask**'. (Pip comes pre-installed with Python 3)
        This will start installing the Flask package.
 
