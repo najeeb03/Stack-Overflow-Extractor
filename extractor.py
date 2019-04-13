@@ -1,3 +1,6 @@
+# This file is written in accordance to Python 3.7.
+# Please update to a recent Python version for ensuring compatability.
+
 import requests
 from html import unescape
 from datetime import datetime, timedelta
