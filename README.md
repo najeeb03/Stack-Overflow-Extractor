@@ -1,6 +1,6 @@
 # Stack-Overflow-Extractor
 
-This is a small assigmnet which will simply display the ten most recent and ten most voted question on Stack Overflow. 
+This is a small web-app which will simply display the ten most recent and ten most voted question on Stack Overflow. 
 
 It uses Stack Exchange's API to make a HTTP request and then processes the data and displays it.
 
