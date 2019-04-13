@@ -20,9 +20,9 @@
                       <div class="media-body">
                         <div class="article-metadata">
                           <p class="mr-2">Posted by:
-                            <a class="mr-2" href="#">{{ item_newest['owner']['display_name'] }}</a>
+                            <a class="mr-2 text-primary" >{{ item_newest['owner']['display_name'] }}</a>
                             <small class="text-muted">on {{ item_newest['creation_date'] }}</small>
-                            <small class="text-muted">votes: {{ item_newest['score'] }}</small>
+                            <small class="text-dark">Votes: {{ item_newest['score'] }}</small>
                           </p>
                         </div>
                         <h5><a class="article-title" href="{{ item_newest['link'] }}" target="_blank">{{ item_newest['title'] }}</a></h5>
@@ -32,9 +32,9 @@
                       <div class="media-body">
                         <div class="article-metadata">
                           <p class="mr-2">Posted by:
-                            <a class="mr-2" href="#">{{ item_votes['owner']['display_name'] }}</a>
+                            <a class="mr-2 text-primary" >{{ item_votes['owner']['display_name'] }}</a>
                             <small class="text-muted">on {{ item_votes['creation_date'] }}</small>
-                            <small class="text-muted">votes: {{ item_votes['score'] }}</small>
+                            <small class="text-dark">Votes: {{ item_votes['score'] }}</small>
                           </p>
                         </div>
                         <h5><a class="article-title" href="{{ item_votes['link'] }}" target="_blank">{{ item_votes['title'] }}</a></h5>
