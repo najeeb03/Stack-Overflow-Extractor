@@ -1,6 +1,14 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>About Page</h1>
-    <p>This website can be used to view current and top questions on Stack Overflow!</p>
-    <h2>This Website Is Under Development.</h2>
+    <article class="media content-section col-sm ">
+          <div class="media-body">
+            <div class="article-metadata">
+              <h2 class="media justify-content-md-center article-title">What does this website do?</h2>
+            </div>
+            <p class="media content-md-center article-content">The main purpose of this website is to show 10 of the most recent and 10 most 'voted' questions tagged with 'android' from Stack Overflow.</p>
+            <br>
+            <p>Created by Ahmad Najeeb</p>
+            <a class="text-success" href="https://github.com/najeeb03/Stack-Overflow-Extractor" target="_blank">Click the here to follow the project on Github</a>
+          </div>
+        </article>
 {% endblock content %}
