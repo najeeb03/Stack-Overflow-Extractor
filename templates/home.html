@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row media justify-content-md-center">
+            <h1 class="">Top Ten ANDROID Questions of the Week</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="media justify-content-md-center">Ten most recent questions</h5>
+                </div>
+                <div class="col-6 ">
+                    <h5 class="media justify-content-md-center">Ten most voted questions</h5>
+                </div>
+            </div>
+            {% for item_newest, item_votes in zip(data_newest['items'], data_votes['items']) %}
+                <div class="container">
+                  <div class="row">
+                    <article class="media content-section col-6">
+                      <div class="media-body">
+                        <div class="article-metadata">
+                          <p class="mr-2">Posted by:
+                            <a class="mr-2 text-primary" >{{ item_newest['owner']['display_name'] }}</a>
+                            <small class="text-muted">on {{ item_newest['creation_date'] }}</small>
+                            <small class="text-dark">Votes: {{ item_newest['score'] }}</small>
+                          </p>
+                        </div>
+                        <h5><a class="article-title" href="{{ item_newest['link'] }}" target="_blank">{{ item_newest['title'] }}</a></h5>
+                      </div>
+                    </article>
+                    <article class="media content-section col-6">
+                      <div class="media-body">
+                        <div class="article-metadata">
+                          <p class="mr-2">Posted by:
+                            <a class="mr-2 text-primary" >{{ item_votes['owner']['display_name'] }}</a>
+                            <small class="text-muted">on {{ item_votes['creation_date'] }}</small>
+                            <small class="text-dark">Votes: {{ item_votes['score'] }}</small>
+                          </p>
+                        </div>
+                        <h5><a class="article-title" href="{{ item_votes['link'] }}" target="_blank">{{ item_votes['title'] }}</a></h5>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
