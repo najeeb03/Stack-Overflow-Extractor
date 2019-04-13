@@ -26,7 +26,7 @@ To use this web application you will need Python 3.5 or above. *Please follow th
     **Requests**: *http://docs.python-requests.org/en/master/*
   
 4) After the steps above are done, from your cli shell change directory to where you have stored the files from this repository.
-   Then type in '**python extractor.py**'. This will cause the *extractor.py* file to be executed using Python and flask web server to star running.
+   Then type in '**python extractor.py**'. This will cause the *extractor.py* file to be executed using Python and Flask web server to star running.
    
 5) Now open a browser and in the adressbar, type in either '**http://127.0.0.1:5000/**' or '**localhost:5000**'. This will open the web application home/landing page.
 
