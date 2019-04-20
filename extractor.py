@@ -10,11 +10,11 @@ from_date = to_date - timedelta(days = 7)
 to_date = int (to_date.timestamp())
 from_date = int (from_date.timestamp())
 
-payload = {'pagesize': 10, 'from_date': from_date, 'to_date': to_date,
-           'order': 'desc', 'tagged': 'android', 'site': 'stackoverflow'}
+payload = {'pagesize': 10, 'order': 'desc', 'tagged': 'android', 'site': 'stackoverflow'}
 
-url_newest = 'http://api.stackexchange.com/2.2/questions?sort=creation'
-url_votes = 'http://api.stackexchange.com/2.2/questions?sort=votes'
+url_newest = 'http://api.stackexchange.com/2.2/questions?sort=creation&fromdate='+ str(from_date) +'&todate='+ str(to_date)
+url_votes = 'http://api.stackexchange.com/2.2/questions?sort=votes&fromdate='+ str(from_date) +'&todate='+ str(to_date)
+
 
 def get_data(url, payload):
     r = requests.get(url, params=payload)
